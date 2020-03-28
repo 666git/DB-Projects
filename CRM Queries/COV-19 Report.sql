@@ -29,22 +29,6 @@ SELECT
 	   IF(D.cancelled , 'Yes', 'No')                                           AS "Deal Cancelled"
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 FROM Deal_Date DD
          LEFT JOIN Artist A ON DD.artistID = A.id
          LEFT JOIN User U ON A.agentID = U.id
